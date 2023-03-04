@@ -11,7 +11,11 @@
     <header>
         <nav class="nav">
             <h1 class="nav--logo">PM</h1>
-            <div class="container--settings">
+            <div class="container--settings">                
+                <div class="containerMode">
+                    <button class="btn containerMode--dark-mode"><i class="fa-solid fa-moon"></i></button>
+                    <button class="btn containerMode--ligth-mode"><i class="fa-solid fa-sun"></i></button>
+                </div>
                 <div class="container--settings-timer">
                     <button class="btn settings--btn"><i class="fa-solid fa-gear"></i></button>
                     <div class="container--settings-open">
@@ -26,11 +30,6 @@
                         </div>
                     </div> 
                 </div>
-                
-                <div class="containerMode">
-                    <button class="btn containerMode--dark-mode"><i class="fa-solid fa-moon"></i></button>
-                    <button class="btn containerMode--ligth-mode"><i class="fa-solid fa-sun"></i></button>
-                </div>
             </div>
         </nav>
     </header>
@@ -38,9 +37,9 @@
         <div class="container--time">
             <div class="container--time-start">
                 <div class="container--time-btns">
-                    <button class="btn--time">Pomo</button>
-                    <button class="btn--time">Short</button>
-                    <button class="btn--time">Long</button>
+                    <button class="btn--time"><p class="texto">Pomo</p></button>
+                    <button class="btn--time"><p class="texto">Short</p></button>
+                    <button class="btn--time"><p class="texto">Long</p></button>
                 </div>
                 <span class="timer">00:00</span>
                 <button class="btn--start"><i class="fa-sharp fa-solid fa-play"></i></button>
@@ -51,5 +50,6 @@
     </main>
 
     <script src="https://kit.fontawesome.com/92ec81e9db.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

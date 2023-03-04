@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #bdb4aa;
+    background: #bdb4aa; 
 }
 
 .nav{
@@ -72,7 +72,7 @@ body{
     padding: 7px 10px;
     margin: 10px 4px;
     border: none;
-    color: #fff;
+    color: #f2f2f2;
     background-color: #725e54;
     border-radius: 30px;
     margin-top: 25px;
@@ -84,7 +84,7 @@ body{
     border-radius: 100%;
     border: none;
     background-color: #725e54;
-    color: #fff;
+    color: #f2f2f2;
     margin-bottom: 2rem;
 }
 
@@ -94,13 +94,65 @@ body{
 
 .timer{
     font-size: 80px;
+    color: #725e54;
 }
 
 .contador{
     position: absolute;
     bottom: 10%;
-    color: #fff;
+    color: #f2f2f2;
 }
 
 /* dark mode */
+.fondo--dark-body{
+    background-color: #262626; 
+}
 
+.fondo--dark-timer{
+    background-color: #333;
+}
+
+.fondo--dark-btn{
+    background-color: #c38e70;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .container--time-start{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px){
+    .btn{
+        cursor: pointer;
+    }
+    .btn--start{
+        cursor: pointer;
+    }
+    .container--time-btns .texto{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:1366px){
+    .container--time-start{
+        width: 40%;
+    }
+
+    .nav{
+        margin: 0 6rem;
+    }
+
+    .btn{
+        cursor: pointer;
+    }
+
+    .container--time-btns .texto{
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn--start{
+        cursor: pointer;
+    }
+}
