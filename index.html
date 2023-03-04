@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +14,69 @@
             <div class="container--settings">                
                 <div class="containerMode">
                     <button class="btn containerMode--dark-mode"><i class="fa-solid fa-moon"></i></button>
-                    <button class="btn containerMode--ligth-mode"><i class="fa-solid fa-sun"></i></button>
+                    <button class="btn containerMode--light-mode"><i class="fa-solid fa-sun"></i></button>
                 </div>
                 <div class="container--settings-timer">
                     <button class="btn settings--btn"><i class="fa-solid fa-gear"></i></button>
-                    <div class="container--settings-open">
-                        <h4>Settings</h4>
-                        <div>
-                            <span>Pomodoro</span>
-                            <input type="number">
-                            <span>Short Break</span>
-                            <input type="number">
-                            <span>Long Break</span>
-                            <input type="number">
-                        </div>
-                    </div> 
                 </div>
             </div>
         </nav>
     </header>
+    <div class="absoluto">
+        <div class="container--settings-open">
+            <div class="titulo-settings">
+               <h4>Settings</h4>
+            <button class="btn-close"><i class="fa-sharp fa-solid fa-xmark"></i></button> 
+            </div>
+            
+            <div class="open">
+                <h3>Tiempo (minutos)</h3>
+                <div class="cont--timer">
+                    <div class="cont--timer-inputP">
+                        <span>Pomodoro</span>
+                        <input type="number" class="inp inp1"> 
+                    </div>
+                    <div class="cont--timer-inputS">
+                        <span>Short Break</span>
+                        <input type="number" class="inp inp2"> 
+                    </div>
+                    <div class="cont--timer-inputL">
+                        <span>Long Break</span>
+                        <input type="number" class="inp inp3"> 
+                    </div>
+                </div>
+                
+                <div class="auto--start">
+                    <div>
+                        <span>Auto Start Breaks</span>
+                        <input type="checkbox" id="switch1"> 
+                        <label for="switch1" class="lbl"></label> 
+                    </div>
+                    <div>
+                        <span>Auto Start Pomodoros</span>
+                        <input type="checkbox" id="switch2">
+                        <label for="switch2" class="lbl"></label>
+                    </div>
+                    <div>
+                        <span>Long Break interval</span>
+                        <input type="number" class="long"> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
     <main>
         <div class="container--time">
             <div class="container--time-start">
                 <div class="container--time-btns">
-                    <button class="btn--time"><p class="texto">Pomo</p></button>
-                    <button class="btn--time"><p class="texto">Short</p></button>
-                    <button class="btn--time"><p class="texto">Long</p></button>
+                    <button class="btn--time btn1"><p class="texto">Pomo</p></button>
+                    <button class="btn--time btn2"><p class="texto">Short</p></button>
+                    <button class="btn--time btn3"><p class="texto">Long</p></button>
                 </div>
                 <span class="timer">00:00</span>
-                <button class="btn--start"><i class="fa-sharp fa-solid fa-play"></i></button>
-                <button class="btn--start pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="btn--start btn4"><i class="fa-sharp fa-solid fa-play"></i></button>
+                <button class="btn--start pause btn5"><i class="fa-solid fa-pause"></i></button>
             </div>
             <span class="contador">#<b>0</b></span>
         </div>
