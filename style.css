@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bubbler One', sans-serif;
+}
+
+body{
+    background: #bdb4aa;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    color: #725e54;
+}
+
+.container--settings-timer{
+    margin: 0 15px;
+}
+
+.btn{
+    padding: 7px 10px;
+    border: none;
+    font-size: 20px;
+    color: #725e54;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.container--settings{
+    display: flex;
+}
+
+.container--settings-open{
+    display: none;
+}
+
+.containerMode--ligth-mode{
+    display: none;
+}
+
+/* main */
+
+.container--time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 67px);
+}
+
+.container--time-start{
+    box-sizing: border-box;
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d4cc;
+    border-radius: 15px;
+}
+
+.container--time-btns .btn--time{
+    padding: 7px 10px;
+    margin: 10px 4px;
+    border: none;
+    color: #fff;
+    background-color: #725e54;
+    border-radius: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.btn--start{
+    padding: 25px;
+    border-radius: 100%;
+    border: none;
+    background-color: #725e54;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.pause{
+    display: none;
+}
+
+.timer{
+    font-size: 80px;
+}
+
+.contador{
+    position: absolute;
+    bottom: 10%;
+    color: #fff;
+}
+
+/* dark mode */
+
