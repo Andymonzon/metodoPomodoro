@@ -33,16 +33,16 @@
                 <h3>Tiempo (minutos)</h3>
                 <div class="cont--timer">
                     <div class="cont--timer-inputP">
-                        <span>Pomodoro</span>
-                        <input type="number" class="inp inp1"> 
+                        <label for="pomodoro">Pomodoro</label>
+                        <input type="number" class="inp inp1" id="pomodoro" value="25"> 
                     </div>
                     <div class="cont--timer-inputS">
-                        <span>Short Break</span>
-                        <input type="number" class="inp inp2"> 
+                        <label for="shortBreak">Short Break</label>
+                        <input type="number" class="inp inp2" id="shortBreak" value="5"> 
                     </div>
                     <div class="cont--timer-inputL">
-                        <span>Long Break</span>
-                        <input type="number" class="inp inp3"> 
+                        <label for="longBreak">Long Break</label>
+                        <input type="number" class="inp inp3" id="longBreak" value="15"> 
                     </div>
                 </div>
                 
@@ -59,7 +59,7 @@
                     </div>
                     <div>
                         <span>Long Break interval</span>
-                        <input type="number" class="long"> 
+                        <input type="number" class="long" value="4"> 
                     </div>
                     
                 </div>
@@ -74,11 +74,15 @@
                     <button class="btn--time btn2"><p class="texto">Short</p></button>
                     <button class="btn--time btn3"><p class="texto">Long</p></button>
                 </div>
-                <span class="timer">00:00</span>
-                <button class="btn--start btn4"><i class="fa-sharp fa-solid fa-play"></i></button>
-                <button class="btn--start pause btn5"><i class="fa-solid fa-pause"></i></button>
+                <span class="timer">25:00</span>
+                <div class="btn-ipd">
+                    <button id="btn-iniciar" class="btn--start"><i class="fa-sharp fa-solid fa-play"></i></button>
+                    <button id="btn-pausar" class="btn--start pause"><i class="fa-solid fa-pause"></i></button>
+                    <button id="btn-detener" class="btn--start detener"><i class="fa-solid fa-stop"></i></button> 
+                </div>
+                
             </div>
-            <span class="contador">#<b>0</b></span>
+            <span class="contador">#0</span>
         </div>
     </main>
 

@@ -59,6 +59,13 @@ body{
     display: flex;
 }
 
+.btn-ipd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
 .container--settings-open{
     background-color: #e2e2e2;
     height: 80%;
@@ -101,11 +108,15 @@ body{
     font-weight: bold;
 }
 
+.open h3{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
 .cont--timer{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 10px;
 }
 
 .cont--timer-inputP, .cont--timer-inputS, .cont--timer-inputL{
@@ -237,6 +248,10 @@ body{
 }
 
 .pause{
+    display: none;
+}
+
+.detener{
     display: none;
 }
 
